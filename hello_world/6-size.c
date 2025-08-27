@@ -1,18 +1,18 @@
 #include <stdio.h>
-\**
+/**
 *main print the size of various types
 *
-*return alwayes 0 sucsess
+*return always 0 
 *
 **/
 
 int main(void)
 {
-printf("size of  a char:\n "sizeof(char));
-printf("size of an int:\n  "sizeof(int));
-printf("size of a long int\n"sizeof(long int));
-printf("size of a long long int \n"sizeof(long long int));
-printf("size of a float \n"sizeof(float));
+printf("size of  a char: %zu byte(S)\n ",sizeof(char));
+printf("size of an int: %zu byte(s)\n  ",sizeof(int));
+printf("size of a long int:%zu byte(s) \n",sizeof(long int));
+printf("size of a long long int:%zu byte(s) \n",sizeof(long long int));
+printf("size of a float:%zu byte(s) \n",sizeof(float));
 
-return(0)
+return(0);
 }
