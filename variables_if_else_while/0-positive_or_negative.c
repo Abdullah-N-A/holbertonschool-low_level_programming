@@ -13,7 +13,7 @@ int main(void)
 {
     int n;
 
-    srand(time(0));   /* Use the current time as the seed for the random number */
+    srand(time(0)); /* Use the current time as the seed for the random number */
     n = rand() - RAND_MAX / 2; /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
 
     if (n > 0)
