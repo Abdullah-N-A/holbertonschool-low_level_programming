@@ -11,23 +11,23 @@
 
 int main(void)
 {
-    int n;
+	int n;
 
-    srand(time(0)); /* Use the current time as the seed for the random number */
-    n = rand() - RAND_MAX / 2; /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
+	srand(time(0));/* Use the current time as the seed for the random number */
+	n = rand() - RAND_MAX / 2;  /* Generate a random number between -RAND_MAX/2 and RAND_MAX/2 */
 
-    if (n > 0)
-    {
-        printf("%d is positive\n", n);
-    }
-    else if (n < 0)
-    {
-        printf("%d is negative\n", n);
-    }
-    else
-    {
-        printf("%d is zero\n", n);
-    }
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
 
-    return (0);
+	return (0);
 }
