@@ -1,5 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
+
+#define MAIN_H
 char *_strpbrk(char *s, char *accept);
 int _pow_recursion(int x, int y);
 unsigned int _strspn(char *s, char *accept);
