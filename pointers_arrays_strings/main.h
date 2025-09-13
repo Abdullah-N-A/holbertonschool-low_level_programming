@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 #define MAIN_H
+void print_chessboard(char (*a)[8]);
 char *_strpbrk(char *s, char *accept);
 int _pow_recursion(int x, int y);
 unsigned int _strspn(char *s, char *accept);
