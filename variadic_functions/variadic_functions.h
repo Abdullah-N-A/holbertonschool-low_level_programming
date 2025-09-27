@@ -2,7 +2,14 @@
 #define VARIADIC_FUNCTIONS_H
 
 #include <stdarg.h>
-
+/**
+ * struct printer - Struct to map format types to printing functions
+ * @symbol: The format symbol (c, i, f, s)
+ * @print: Pointer to function to print that type
+ *
+ * Description: Used in print_all to associate a format character
+ *              with the correct printing function.
+ */
 typedef struct printer
 {
 	char *symbol;
