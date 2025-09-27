@@ -1,12 +1,11 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- * print_numbers - Prints numbers followed by a new line.
- * @separator: String to be printed between numbers
- * @n: Number of integers passed to the function
- * @...: Variable number of integer parameters
+ * sum_them_all - Sums all its parameters.
+ * @n: The number of parameters passed to the function.
+ * @...: A variable number of parameters to be summed.
  *
- * Description: If separator is NULL, no separator is printed.
+ * Return: The sum of all parameters. If n is 0, return 0.
  */
 int sum_them_all(const unsigned int n, ...)
 {
