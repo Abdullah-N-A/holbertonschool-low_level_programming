@@ -1,20 +1,23 @@
-; File: 100-hello_world.asm
+; 100-hello_world.asm
+; 64-bit NASM assembly program
+; Prints "Hello, World" followed by a newline, then exits with SUCCESS (0)
+
 section .data
-msg:    db  "Hello, World", 10    ; النص مع newline
-len     equ $ - msg               ; الطول
+msg:    db "Hello, World", 0x0A    ; our message
+len     equ $ - msg                ; length of message
 
 section .text
 global _start
 
 _start:
     ; write(1, msg, len)
-    mov     rax, 1          ; syscall: sys_write (1)
-    mov     rdi, 1          ; file descriptor: stdout (1)
-    lea     rsi, [rel msg]  ; pointer to message
-    mov     rdx, len        ; message length
+    mov     rax, 1          ; syscall: write
+    mov     rdi, 1          ; fd = 1 (stdout)
+    lea     rsi, [rel msg]  ; address of string
+    mov     rdx, len        ; length
     syscall
 
     ; exit(0)
-    mov     rax, 60         ; syscall: sys_exit (60)
-    xor     rdi, rdi        ; status 0
+    mov     rax, 60         ; syscall: exit
+    xor     rdi, rdi        ; status = 0 (SUCCESS)
     syscall
