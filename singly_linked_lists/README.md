@@ -1,33 +1,46 @@
 SINGLY LINKED LIST OPERATIONS IN C
+0. Print list
 
-This project covers essential operations on singly linked lists in C.
-You will learn how to print the list, calculate its length, add nodes at different positions, and properly free the list’s memory.
+Write a function that prints all the elements of a linked list.
 
-FILES AND TASKS
+Prototype: size_t print_list(const list_t *h);
 
-0. PRINT LIST
-Print all elements from the head node to the end.
+The function should print each element’s string, or (nil) if the string is NULL.
 
-1. LIST LENGTH
-Calculate and return the number of nodes in the list.
+Returns the number of nodes in the list.
 
-2. ADD NODE
-Add a new node at the beginning of the list.
+1. List length
 
-3. ADD NODE AT THE END
-Add a new node at the end of the list.
+Write a function that returns the number of elements in a linked list.
 
-4. FREE LIST
-Free all memory allocated for the nodes to avoid leaks.
+Prototype: size_t list_len(const list_t *h);
 
-SUMMARY
+This function should traverse the list and count all the nodes.
 
-This project helps you practice:
+2. Add node
 
-Traversing linked lists.
+Write a function that adds a new node at the beginning of a linked list.
 
-Counting nodes.
+Prototype: list_t *add_node(list_t **head, const char *str);
 
-Inserting nodes at beginning and end.
+Returns the address of the new element, or NULL if it failed.
 
-Properly freeing allocated memory.
+The new node should contain a copy of the string passed as an argument.
+
+3. Add node at the end
+
+Write a function that adds a new node at the end of a linked list.
+
+Prototype: list_t *add_node_end(list_t **head, const char *str);
+
+Returns the address of the new element, or NULL if it failed.
+
+The string should be duplicated and stored in the new node.
+
+4. Free list
+
+Write a function that frees a linked list.
+
+Prototype: void free_list(list_t *head);
+
+This function should free all nodes and their strings.
