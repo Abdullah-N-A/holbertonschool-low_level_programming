@@ -93,3 +93,14 @@ Introduction to function pointers:
 - Building a simple calculator program.
 
 
+### 12 Variadic Functions in C
+Variadic functions are functions that accept a variable number of arguments.
+How to Use Variadic Functions
+
+Declare a va_list variable to access the variable arguments.
+
+Initialize the variable argument list with va_start, specifying the last fixed argument.
+
+Retrieve arguments one by one using va_arg, specifying the type.
+
+Clean up using va_end after done.
