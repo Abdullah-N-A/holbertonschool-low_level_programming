@@ -1,16 +1,37 @@
-Singly Linked List Common Operations Explained
+Singly Linked List Operations in C
 
-0. Print List
-Traverse the list from the head node to the end, printing each node’s data until you reach a node that points to NULL.
+This project covers fundamental operations on singly linked lists in C.
+You will learn how to print the list, calculate its length, add nodes at different positions, and properly free the list’s memory.
 
-1. List Length
-Count the total number of nodes by starting at the head and moving through each node until the end, incrementing a counter for every node visited.
+Files and Tasks
+0. PRINT LIST
 
-2. Add Node at Beginning
-Create a new node and set its next pointer to the current head of the list. Then update the head to point to this new node, effectively inserting it at the front.
+Traverse and print all elements from the head node to the end of the list.
 
-3. Add Node at End
-Create a new node with its next pointer set to NULL. Traverse the list starting from the head until you find the last node (the one pointing to NULL). Update this last node’s next pointer to point to the new node, adding it at the end.
+1. LIST LENGTH
 
-4. Free List
-To avoid memory leaks, go through the list and free the memory allocated for each node, starting from the head and moving forward, until all nodes have been deallocated. Finally, set the head pointer to NULL.
+Calculate and return the total number of nodes in the list.
+
+2. ADD NODE
+
+Insert a new node at the beginning of the list.
+
+3. ADD NODE AT THE END
+
+Insert a new node at the end of the list.
+
+4. FREE LIST
+
+Free all allocated memory used by the list nodes to avoid memory leaks.
+
+Summary
+
+This project helps practice:
+
+Traversing linked lists.
+
+Counting nodes in a list.
+
+Inserting nodes at the beginning and end.
+
+Proper memory management by freeing allocated nodes.
