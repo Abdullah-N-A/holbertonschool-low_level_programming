@@ -1,37 +1,33 @@
 SINGLY LINKED LIST OPERATIONS IN C
 
-This project covers fundamental operations on singly linked lists in C.
+This project covers essential operations on singly linked lists in C.
 You will learn how to print the list, calculate its length, add nodes at different positions, and properly free the list’s memory.
 
 FILES AND TASKS
-0. PRINT LIST
 
-Traverse and print all elements from the head node to the end of the list.
+0. PRINT LIST
+Print all elements from the head node to the end.
 
 1. LIST LENGTH
-
-Calculate and return the total number of nodes in the list.
+Calculate and return the number of nodes in the list.
 
 2. ADD NODE
-
-Insert a new node at the beginning of the list.
+Add a new node at the beginning of the list.
 
 3. ADD NODE AT THE END
-
-Insert a new node at the end of the list.
+Add a new node at the end of the list.
 
 4. FREE LIST
-
-Free all allocated memory used by the list nodes to avoid memory leaks.
+Free all memory allocated for the nodes to avoid leaks.
 
 SUMMARY
 
-This project helps practice:
+This project helps you practice:
 
 Traversing linked lists.
 
-Counting nodes in a list.
+Counting nodes.
 
-Inserting nodes at the beginning and end.
+Inserting nodes at beginning and end.
 
-Proper memory management by freeing allocated nodes.
+Properly freeing allocated memory.
