@@ -104,3 +104,45 @@ Initialize the variable argument list with va_start, specifying the last fixed a
 Retrieve arguments one by one using va_arg, specifying the type.
 
 Clean up using va_end after done.
+
+
+
+
+
+
+
+### 13. singly_linked_lists
+**C - Singly Linked Lists**
+- Creating and traversing singly linked lists.
+- Adding and deleting nodes.
+- Understanding list head, node structure, and dynamic memory management.
+- Practicing with custom data structures (`struct list_s`).
+
+---
+
+
+
+
+### 14. doubly_linked_lists
+**C - Doubly Linked Lists**
+- Working with lists that link both forward and backward.
+- Inserting, deleting, and traversing in both directions.
+- Understanding bidirectional pointers (`prev` and `next`).
+- Managing memory safely in complex list operations.
+
+---
+
+### 15. file_io
+**C - File Input/Output**
+- Using system calls: `open`, `read`, `write`, and `close`.
+- Managing file descriptors and permissions.
+- Creating, reading, writing, and appending files.
+- Handling errors properly with `dprintf`.
+- Building a mini `cp` program to copy file contents.
+
+---
+
+## Author
+**Abdullah**  
+Holberton School Student  
+📧 11986@holbertonstudents.com
